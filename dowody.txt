@@ -1,0 +1,48 @@
+Jakubiec Jarosław
+Logika Matematyczna - zadanie 2.
+
+Twierdzenie 1.
+jeśli s lparen, to s mparen.
+
+Dowód:
+Twierdzenie s lparen można otrzymać z reguł Leps lub Lseq. Dowód ma
+dwie części:
+1. s lparen otrzymaliśmy z reguły Leps.
+Musi być s = e. Na mocy reguły Meps, e mparen, czyli s mparen.
+Załóżmy teraz (indukcyjnie), że dla jakiegos s lparen, wszystkie krótsze ciągi s' lparen są
+mparen.
+2. s lparen otrzymaliśmy z reguły Lseq.
+Dlatego muszą być takie s1 lparen i s2 lparen, że s = (s1)s2. s1 oraz s2 są
+krótsze od s, dlatego dotyczy ich założenie indukcyjne, które mówi, iż s1 mparen oraz s2 mparen.
+Na mocy reguły Mpar zastosowanej do s1 mparen, otrzymujemy (s1) mparen.
+Stosując regułę Mseq do (s1) mparen i s2 mparen, otrzymujemy wprost (s1)s2 mparen, co
+można zapisac jako s mparen.
+Skoro twierdzenie s lparen nie powstanie inaczej, niż z reguł Leps i Lseq to s
+lparen implikuje, że s mparen.
+
+Lemat 1.
+Jesli s tparen oraz s' tparen, to ss' tparen.
+Dowód ma dwie części:
+1. s' tparen otrzymano z reguły Teps.
+Wowczas jednak musi być s' = e. Wtedy oczywiście ss' = se = s, a ponieważ s tparen, to można zapisać jako ss' tparen.
+Załóżmy teraz (indukcyjnie), że dla pewnego s' tparen, dla wszystkich krótszych ciągów s''
+tparen zachodzi ss'' tparen.
+2. s' tparen z reguły Tseq.
+więc istnieją ciagi s1 tparen i s2 tparen, że s' = s1(s2). Dlatego, s1 jest
+krótsze od s'. Można zastosować założenie indukcyjne. Zastostosowanie go dla
+ciągów s tparen oraz s1 tparen daje ss1 tparen.
+Korzystając z reguły Tseq dla ss1 tparen oraz s2 tparen, otrzymujemy ss1(s2) tparen, co
+można zapisać jako ss' tparen, cnd.
+
+Twierdzenie 2.
+Jeśli s lparen to s tparen.
+
+1. s lparen otrzymaliśmy z reguły Leps.
+Musi być s = e. Jednak na mocy reguły Teps, e tparen, czyli s tparen.
+Załóżmy teraz (indukcyjnie), że dla pewnego s lparen, wszystkie krótsze ciągi s' lparen są
+tparen.
+2. s lparen otrzymaliśmy z reguły Lseq.
+Muszą istnieć takie s1 lparen i s2 lparen, że s = (s1)s2. Jest oczywiste, że s1 oraz
+s2 są krótsze od s, wobec czego można zastosowac do nich założenie indukcyjne, aby otrzymać s1
+tparen oraz s2 tparen. Kładąc w regule Tseq e tparen i s1 tparen, uzyskamy e(s1) tparen, czyli (s1)
+tparen. Na mocy Lematu 1. zastosowanego dla (s1) tparen oraz s2 tparen, mamy (s1)s2 tparen, co można zapisać jako s tparen.
